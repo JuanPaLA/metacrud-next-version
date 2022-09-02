@@ -2,15 +2,6 @@
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .footer {
   display: flex;
@@ -121,9 +112,36 @@
     border-color: #222;
   }
   .code {
-    background: #111;
+    /* background: #111; */
   }
   .logo img {
     filter: invert(1);
   }
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.box{
+  border: solid 1px black;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 11px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.item{
+  border: solid 1px lightgrey;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
 }

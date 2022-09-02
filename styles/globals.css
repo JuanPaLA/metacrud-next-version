@@ -15,12 +15,139 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
 }
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+#header{
+  width: 100%;
+}
+#footer{
+  width: 100%;
+  margin-bottom: 10px !important;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin: auto;
+  top: 1vh; /* Center vertically */
+  width: 110%;
+  height: 80vh; /* Full height */
+  max-width: 650px; /* Full width */    
+  overflow: auto; /* Enable scroll if needed */
+  background-color:lightgray; /* Fallback color */
+  border: solid 2px black;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    bottom: 50px;
+    z-index: 1;
+  }
+  
+  .dropup-content pre {
+    color: black;
+    padding: 7px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content a:hover {background-color: #ccc}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+   
+  .button{
+    border: solid 1px lightgrey;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box{
+    border: solid 1px black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 11px;
+    width: 100%;
+    max-width: 600px;
+    min-width: 600px;
+  }
+  
+  .item{
+    border: solid 1px black;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  label{
+    margin-right: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
